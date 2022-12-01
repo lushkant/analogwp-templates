@@ -15,8 +15,8 @@ jobs:
       - name: Install Composer dependencies
         uses: php-actions/composer@v6
         with:
-            composer_version: 1
-            php_version: '8.0'
+            version: 1
+            php_version: '7.4'
 
       - name: Install WordPress cli
         run: curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar && chmod +x wp-cli.phar && sudo mv wp-cli.phar /usr/local/bin/wp
