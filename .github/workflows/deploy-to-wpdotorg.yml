@@ -30,7 +30,7 @@ jobs:
         run: yarn install
 
       - name: Prepare release build
-        run: yarn run build:release
+        run: yarn run gh:release
 
       - name: WordPress Plugin Deploy
         uses: 10up/action-wordpress-plugin-deploy@master
