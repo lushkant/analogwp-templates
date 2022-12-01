@@ -18,8 +18,8 @@ jobs:
             composer_version: 1
             php_version: '8.0'
 
-			- name: Install WordPress cli
-			  run: curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar && php wp-cli.phar --info
+      - name: Install WordPress cli
+        run: curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar && php wp-cli.phar --info
 
       - name: Setup Node
         uses: actions/setup-node@v3
